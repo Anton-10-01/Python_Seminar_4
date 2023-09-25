@@ -1,8 +1,10 @@
-d = {} #Словари
-d = dict()
+dictionary = {}
+dictionary = {'addition' : '+', 'Subtraction' : '-', 'Multiplication' : '*', 'Division': '/'}
 
-d['q'] = 'qwerty'
-print(d)
+print(dictionary)
+print(dictionary['addition'])
 
-d['w'] = 'werty'
-print(d['q'])
+# del dictionary['Division'] #Удаление элемента
+
+for item in dictionary:
+    print('{}: {}'.format(item, dictionary[item]))
